@@ -1,10 +1,6 @@
 ---
-name: tlc-plan
-description: 'Turns decided work — a PRD, design doc, RFC, or thread — into tasks a builder can act on without guessing. Finds slices that each prove something, grounds them in the code, and writes intent, observable criteria with concrete values, the boundary, what the change disturbs, and only the decisions that are hard to reverse. Walks every surface the work exposes and sweeps the nine unwritten requirements, recording each landing as a criterion already in the source, existing behaviour, n/a, or Unresolved — never as a criterion the walk invented. Defaults to one task per source. Use when the user says "write the task", "cut this PRD into tasks", "turn this design doc into work", or "tlc-plan". Do NOT use for discovery itself or to implement — a one-line ticket is a decision; a blank wish is not.'
-license: CC-BY-4.0
-metadata:
-  author: Tech Leads Club - github.com/tech-leads-club
-  version: 0.2.0
+name: spec-plan
+description: 'Turns decided work — a PRD, design doc, RFC, or thread — into tasks a builder can act on without guessing. Finds slices that each prove something, grounds them in the code, and writes intent, observable criteria with concrete values, the boundary, what the change disturbs, and only the decisions that are hard to reverse. Walks every surface the work exposes and sweeps the nine unwritten requirements, recording each landing as a criterion already in the source, existing behaviour, n/a, or Unresolved — never as a criterion the walk invented. Defaults to one task per source. Use when the user says "write the task", "cut this PRD into tasks", "turn this design doc into work", or "spec-plan". Do NOT use for discovery itself or to implement — a one-line ticket is a decision; a blank wish is not.'
 ---
 
 # TLC Plan
@@ -59,7 +55,7 @@ Three things only the code answers, and each has a home in the task:
 - **Which decisions are actually one-way.** A choice is precedent-setting only relative to what exists. You cannot tell a new pattern from an ordinary one without reading the conventions it will sit beside.
 - **Where the source is simply wrong.** Names the system does not use, APIs that do not exist, a field the document invented. This is the most valuable thing the phase produces, and it goes back to the source, not only into the task.
 
-What you do **not** settle here is placement. Which folder, which service, how many classes: the repository's own conventions answer most of it and the rest is reversible, so writing it down produces exactly the design document that goes stale and then misleads. Placement is recorded downstream, against the code, by **tlc-implement**. The exception is a choice that creates a pattern the codebase does not have - that is a one-way door and belongs in `Decided` like any other.
+What you do **not** settle here is placement. Which folder, which service, how many classes: the repository's own conventions answer most of it and the rest is reversible, so writing it down produces exactly the design document that goes stale and then misleads. Placement is recorded downstream, against the code, by **spec-implement**. The exception is a choice that creates a pattern the codebase does not have - that is a one-way door and belongs in `Decided` like any other.
 
 ## Walk the surfaces
 
@@ -95,7 +91,7 @@ A landing must be a criterion that observes **that** dimension. Reaching for a n
 
 The `n/a` escape is what stops the list from manufacturing requirements. A dimension that does not apply is a complete answer, and inventing a criterion to fill a row is the failure this would otherwise cause. Growing scope stays the user's call: a dimension that resolves to real new behaviour is a question you ask, never a criterion you add.
 
-**tlc-implement** reads this instead of sweeping again - a dimension that lands on a criterion here is a check with a proof there.
+**spec-implement** reads this instead of sweeping again - a dimension that lands on a criterion here is a check with a proof there.
 
 ## Refuse rather than guess
 
@@ -173,7 +169,7 @@ Result: hand off; no `.tasks/` file from this skill.
 ### Example 3: Wrong skill
 
 User says: "Implement the billing task."
-Actions: Do not run this skill. That is tlc-implement.
+Actions: Do not run this skill. That is spec-implement.
 Result: hand off; no new task file.
 
 ## Common failures
