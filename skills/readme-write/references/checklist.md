@@ -1,4 +1,4 @@
-# GitHub README checklist
+# README checklist
 
 Use this checklist after drafting a README.
 
@@ -24,3 +24,13 @@ Use this checklist after drafting a README.
 - Large walls of text without headings/lists
 - Commands embedded in paragraphs instead of code blocks
 - README that duplicates full docs instead of linking out
+
+## Automated check guardrails
+
+If validating a README with a script or linter, cover:
+
+- Core onboarding sections present (installation, usage/quickstart)
+- License section present
+- Command code blocks for setup/use
+- Intro length guardrail
+- Optional table-of-contents reminder on very long files

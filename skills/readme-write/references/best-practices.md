@@ -34,7 +34,7 @@
 
 ### Use Headings Effectively
 
-```markdown
+````markdown
 # Main Title (H1) - Only one per document
 
 ## Major Sections (H2)
@@ -42,7 +42,7 @@
 ### Subsections (H3)
 
 #### Details (H4) - Use sparingly
-```
+````
 
 ### Keep Paragraphs Short
 
@@ -120,42 +120,42 @@ Always include:
 - Installation command
 - Verification step
 
-```markdown
+````markdown
 ## Installation
 
 **Prerequisites:** Node.js 18+
 
-\`\`\`bash
+```bash
 npm install package-name
-\`\`\`
+```
 
 Verify installation:
-\`\`\`bash
+```bash
 package-name --version
-\`\`\`
 ```
+````
 
 ### Configuration
 
 Show default values:
 
-```markdown
+````markdown
 ## Configuration
 
-\`\`\`json
+```json
 {
   "timeout": 5000,     // Default: 5000ms
   "retries": 3,        // Default: 3
   "debug": false       // Default: false
 }
-\`\`\`
 ```
+````
 
 ### Troubleshooting
 
 Address common issues:
 
-```markdown
+````markdown
 ## Troubleshooting
 
 ### Error: "Module not found"
@@ -163,10 +163,10 @@ Address common issues:
 **Cause:** Package not installed
 
 **Solution:**
-\`\`\`bash
+```bash
 npm install missing-package
-\`\`\`
 ```
+````
 
 ## Maintenance
 
@@ -178,22 +178,22 @@ npm install missing-package
 
 ### Version Documentation
 
-```markdown
+````markdown
 ## Version 2.0.0 (Breaking Changes)
 
 - Removed: `oldFunction()`
 - Changed: `newFunction()` now returns Promise
 - Added: `anotherFunction()`
-```
+````
 
 ### Link to External Resources
 
-```markdown
+````markdown
 For more information, see:
 - [Official Docs](https://example.com/docs)
 - [API Reference](https://example.com/api)
 - [Tutorial](https://example.com/tutorial)
-```
+````
 
 ## Accessibility
 
@@ -207,9 +207,9 @@ For more information, see:
 
 ### Provide Alt Text for Images
 
-```markdown
+````markdown
 ![Dashboard showing user analytics with graphs](screenshot.png)
-```
+````
 
 ### Use Semantic Markdown
 
