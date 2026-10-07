@@ -1,0 +1,2 @@
+- [Context7 MCP](https://github.com/upstash/context7) - Provide external libs documentation to the agents
+- [Playwright](https://playwright.dev/mcp) - Playwright MCP
